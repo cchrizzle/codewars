@@ -1,4 +1,4 @@
-// Undated Codewars 8 Kyu Fundamentals - Training JS #8: Conditional statement--switch
+// 1/13/23 Saturday Codewars 8 Kyu Fundamentals - Training JS #8: Conditional statement--switch
 
 // https://www.codewars.com/kata/572059afc2f4612825000d8a/train/javascript
 
