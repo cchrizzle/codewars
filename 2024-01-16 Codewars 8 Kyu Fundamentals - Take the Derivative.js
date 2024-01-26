@@ -1,4 +1,4 @@
-// UNDATED Codewars 8 Kyu Fundamentals - Take the Derivative
+// 1/16/24 Tuesday Codewars 8 Kyu Fundamentals - Take the Derivative
 
 // https://www.codewars.com/kata/5963c18ecb97be020b0000a2/train/javascript
 
