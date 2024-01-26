@@ -1,4 +1,4 @@
-// UNDATED Day Codewars 8 Kyu Fundamentals - Find the Position!
+// 1/23/24 Tuesday Codewars 8 Kyu Fundamentals - Find the Position!
 
 // https://www.codewars.com/kata/5808e2006b65bff35500008f/train/javascript
 
