@@ -10,7 +10,39 @@ Function:
 getNumberFromString(s)
 */
 
-// 2nd attempt
+// Better solution
+function getNumberFromString(s) {
+    let numbersArray = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+    let numbers = '';
+
+    for (let i = 0; i < s.length; i++) {
+        if (numbersArray.includes(s[i])) {      // Used "in" in submission, but "in" is supposed to be used for objects.
+            numbers += s[i];
+        }
+    }
+
+    return parseInt(numbers);
+}
+
+// Another solution using indexOf()
+function getNumberFromString(s) {
+    let numbersArray = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
+    let numbers = '';
+
+    for (let i = 0; i < s.length; i++) {
+        if(numbersArray.indexOf(s[i]) !== -1) {
+            numbers += s[i];
+        }
+    }
+
+    return parseInt(numbers);
+}
+
+
+
+
+
+// 2nd attempt - working but some mistakes; worked anyway because JavaScript is forgiving. Putting better solution above this
 function getNumberFromString(s) {
     let numbersArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
     let numbers = '';
