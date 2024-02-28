@@ -12,6 +12,13 @@ For example (Input --> Output):
 4 --> 0 (because 4 is already a one-digit number)
 */
 
+/* ===============================
+Check other solutions 3 and 4!
+=============================== */
+
+
+
+
 // 2nd attempt - working
 // While loop timing out in 1st try, need to fix
 function persistence(num) {
@@ -86,4 +93,23 @@ function persistence(num) {
       val = `${product}`;
     }
     return i;
-  }
+}
+
+// Other solution #3
+function persistence(num) {
+    let count = 0
+    while(num > 9) {
+     let res = (''+num).split('').reduce((acc,cur) => acc * cur,1)
+     num = res
+      count += 1
+    }
+    return count;
+}
+
+// Other solution #4
+function persistence(num) {
+    for (var i = 0; num > 9; i++) {
+      num = num.toString().split('').reduce((t, c) => c * t);
+    }
+    return i;
+}
