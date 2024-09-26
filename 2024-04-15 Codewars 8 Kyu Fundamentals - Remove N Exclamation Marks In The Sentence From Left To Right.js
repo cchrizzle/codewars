@@ -1,4 +1,4 @@
-// 4/15/24 Monday Codewars 8 Kyu Fundamentals - Exclamation marks series #6: Remove n exclamation marks in the sentence from left to right
+// 4/15/24 Monday Codewars 8 Kyu Fundamentals - Exclamation Marks Series #6: Remove N Exclamation Marks In The Sentence From Left To Right
 
 // https://www.codewars.com/kata/57faf7275c991027af000679/train/javascript
 
@@ -20,7 +20,7 @@ remove("!!!Hi !!hi!!! !hi",100) === "Hi hi hi"
 */
 
 
-// 3rd attempt
+// 3rd attempt - working
 function remove(s,n){
     let removeAmount = n;
 
