@@ -1,4 +1,4 @@
-// 4/9/25 Wednesday Codewars 8 Kyu Fundamentals - Training JS #29: methods of arrayObject---concat() and join()
+// 4/9/25 Wednesday Codewars TypeScript 8 Kyu Fundamentals - Training JS #29: methods of arrayObject---concat() and join()
 
 // https://www.codewars.com/kata/5731861d05d14d6f50000626/train/typescript
 
