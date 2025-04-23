@@ -41,7 +41,35 @@ Explanation:
     Playing With Lists/Arrays Series (https://www.codewars.com/collections/playing-with-lists-slash-arrays)
     For More Enjoyable Katas (http://www.codewars.com/users/MrZizoScream/authored)
 */
+// 3rd attempt
+export function maxTriSum(nums: number[]): number {
+    const unique = new Set(nums);
+    const uniqueArray = [...unique];
 
+    const sorted = uniqueArray.sort((a, b) => b - a);
+
+    let total = 0;
+
+    for(let i = 0; i < 3; i++) {
+        total += sorted[i];
+    }
+
+    return total;
+}
+
+
+// 2nd attempt - not working
+export function maxTriSum(nums: number[]): number {
+    const sortNums: number[] = nums.sort((a, b) => b - a);
+    const sortedSet: number[] = new Set(sortNums);
+
+
+    return sortedSet[0] + sortedSet[1] + sortedSet[2];
+}
+
+
+
+// 1st attempt - not working
 export function maxTriSum(nums: number[]): number {
     const sortNums = nums.sort((a, b) => b - a);
     const sortedSet = new Set(sortNums);
@@ -52,3 +80,5 @@ export function maxTriSum(nums: number[]): number {
 /* =============
 Other Solutions
 ============= */
+// Other solution - used spread operator in array brackets in order to utilize array methods.
+export const maxTriSum = (nums: number[]): number => [...new Set(nums)].sort((a, b) => b - a).slice(0, 3).reduce((acc, val) => acc + val, 0);
