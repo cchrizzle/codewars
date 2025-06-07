@@ -1,4 +1,4 @@
-// 6/6/25 Saturday Codewars 8 Kyu Fundamentals - Multiply the Number
+// 6/6/25 Friday Codewars 8 Kyu Fundamentals - Multiply the Number
 
 // https://www.codewars.com/kata/5708f682c69b48047b000e07/train/javascript
 
