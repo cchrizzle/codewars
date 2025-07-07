@@ -26,13 +26,13 @@ For More Enjoyable Katas (http://www.codewars.com/users/MrZizoScream/authored)
 function strong(n) {
     const factorial = x => {
         let result = 1;
-        for (let i = x; i < 0; i--) {
-            result *= 1;
+        for (let i = x; i > 1; i--) {
+            result *= i;
         }
         return result;
     };
 
-    const splitDigits = n.split(n.toString.split(''));
+    const splitDigits = n.toString().split('');
     const sum = splitDigits.reduce((a, c) => a + factorial(c), 0);
 
     if (sum === n) {
