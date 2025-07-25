@@ -24,3 +24,6 @@ function switcher(x) {
 /* =============
 Other Solutions
 ============= */
+// Mine but condensed, added a space in front so don't have to subtract index either
+const alpha = ' zyxwvutsrqponmlkjihgfedcba!? ';
+const switcher = x => x.map(item => alpha[item]).join('');
